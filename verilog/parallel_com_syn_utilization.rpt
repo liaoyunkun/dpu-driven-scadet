@@ -1,0 +1,27 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Mon Dec 11 02:06:06 2023
+| Host         : KiKiCoffee running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_utilization -file parallel_com_syn_utilization.rpt -hierarchical
+| Design       : parallel_com
+| Device       : xcu200fsgd2104-2
+| Design State : Synthesized
+-----------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------+--------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|   Instance   | Module | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++--------------+--------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| parallel_com |  (top) |        133 |        133 |       0 |    0 |   5 |      0 |      0 |    0 |          0 |
++--------------+--------+------------+------------+---------+------+-----+--------+--------+------+------------+
+
+

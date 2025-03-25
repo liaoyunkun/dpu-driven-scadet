@@ -1,0 +1,2435 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'yunkunliao' on host 'KiKiCoffee' (Linux_x86_64 version 5.15.0-89-generic) on Fri Dec 15 03:47:14 EST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/yunkunliao/scadet_fpga/vivado'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: source run_hls.tcl
+INFO: [HLS 200-1510] Running: open_project -reset hls_prj_opt_3 
+INFO: [HLS 200-10] Opening and resetting project '/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3'.
+WARNING: [HLS 200-40] No /home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/solution1.aps file found.
+INFO: [HLS 200-1510] Running: set_top scadet_v4 
+INFO: [HLS 200-1510] Running: add_files ../hls/scadet_v4.h 
+INFO: [HLS 200-10] Adding design file '../hls/scadet_v4.h' to the project
+INFO: [HLS 200-1510] Running: add_files ../hls/scadet_v4.cpp 
+INFO: [HLS 200-10] Adding design file '../hls/scadet_v4.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/yunkunliao/scadet_fpga/tb/timestamp.txt 
+INFO: [HLS 200-10] Adding test bench file '/home/yunkunliao/scadet_fpga/tb/timestamp.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/yunkunliao/scadet_fpga/tb/scadet_v4_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/yunkunliao/scadet_fpga/tb/scadet_v4_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xcu200-fsgd2104-2-e 
+INFO: [HLS 200-1611] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1510] Running: create_clock -period 4 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-1510] Running: csim_design -ldflags -z stack-size=10485760 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../tb/scadet_v4_tb.cpp in debug mode
+   Compiling ../../../../../hls/scadet_v4.cpp in debug mode
+   Generating csim.exe
+VictimAddr = 7f62aa625577
+secId - 549
+write a new tsk 0
+read a new tsk 0
+write a new tsk 1
+read a new tsk 1
+write a new tsk 2
+read a new tsk 2
+write a new tsk 3
+read a new tsk 3
+write a new tsk 4
+read a new tsk 4
+write a new tsk 5
+read a new tsk 5
+write a new tsk 6
+read a new tsk 6
+write a new tsk 7
+read a new tsk 7
+write a new tsk 8
+read a new tsk 8
+write a new tsk 9
+read a new tsk 9
+write a new tsk 10
+read a new tsk 10
+write a new tsk 11
+read a new tsk 11
+write a new tsk 12
+read a new tsk 12
+write a new tsk 13
+read a new tsk 13
+write a new tsk 14
+read a new tsk 14
+write a new tsk 15
+read a new tsk 15
+write a new tsk 16
+read a new tsk 16
+write a new tsk 17
+read a new tsk 17
+write a new tsk 18
+read a new tsk 18
+write a new tsk 19
+read a new tsk 19
+write a new tsk 20
+read a new tsk 20
+write a new tsk 21
+read a new tsk 21
+write a new tsk 22
+read a new tsk 22
+write a new tsk 23
+read a new tsk 23
+write a new tsk 24
+read a new tsk 24
+write a new tsk 25
+read a new tsk 25
+write a new tsk 26
+read a new tsk 26
+write a new tsk 27
+read a new tsk 27
+write a new tsk 28
+read a new tsk 28
+write a new tsk 29
+read a new tsk 29
+write a new tsk 30
+read a new tsk 30
+write a new tsk 31
+read a new tsk 31
+write a new tsk 32
+read a new tsk 32
+write a new tsk 33
+read a new tsk 33
+write a new tsk 34
+read a new tsk 34
+write a new tsk 35
+read a new tsk 35
+write a new tsk 36
+read a new tsk 36
+write a new tsk 37
+read a new tsk 37
+write a new tsk 38
+read a new tsk 38
+write a new tsk 39
+read a new tsk 39
+write a new tsk 40
+read a new tsk 40
+write a new tsk 41
+read a new tsk 41
+write a new tsk 42
+read a new tsk 42
+write a new tsk 43
+read a new tsk 43
+write a new tsk 44
+read a new tsk 44
+write a new tsk 45
+read a new tsk 45
+write a new tsk 46
+read a new tsk 46
+write a new tsk 47
+read a new tsk 47
+write a new tsk 48
+read a new tsk 48
+write a new tsk 49
+read a new tsk 49
+write a new tsk 50
+read a new tsk 50
+write a new tsk 51
+read a new tsk 51
+write a new tsk 52
+read a new tsk 52
+write a new tsk 53
+read a new tsk 53
+write a new tsk 54
+read a new tsk 54
+write a new tsk 55
+read a new tsk 55
+write a new tsk 56
+read a new tsk 56
+write a new tsk 57
+read a new tsk 57
+write a new tsk 58
+read a new tsk 58
+write a new tsk 59
+read a new tsk 59
+write a new tsk 60
+read a new tsk 60
+write a new tsk 61
+read a new tsk 61
+write a new tsk 62
+read a new tsk 62
+write a new tsk 63
+read a new tsk 63
+write a new tsk 64
+read a new tsk 64
+write a new tsk 65
+read a new tsk 65
+write a new tsk 66
+read a new tsk 66
+write a new tsk 67
+read a new tsk 67
+write a new tsk 68
+read a new tsk 68
+write a new tsk 69
+read a new tsk 69
+write a new tsk 70
+read a new tsk 70
+write a new tsk 71
+read a new tsk 71
+write a new tsk 72
+read a new tsk 72
+write a new tsk 73
+read a new tsk 73
+write a new tsk 74
+read a new tsk 74
+write a new tsk 75
+read a new tsk 75
+write a new tsk 76
+read a new tsk 76
+write a new tsk 77
+read a new tsk 77
+write a new tsk 78
+read a new tsk 78
+write a new tsk 79
+read a new tsk 79
+write a new tsk 80
+read a new tsk 80
+write a new tsk 81
+read a new tsk 81
+write a new tsk 82
+read a new tsk 82
+write a new tsk 83
+read a new tsk 83
+write a new tsk 84
+read a new tsk 84
+write a new tsk 85
+read a new tsk 85
+write a new tsk 86
+read a new tsk 86
+write a new tsk 87
+read a new tsk 87
+write a new tsk 88
+read a new tsk 88
+write a new tsk 89
+read a new tsk 89
+write a new tsk 90
+read a new tsk 90
+write a new tsk 91
+read a new tsk 91
+write a new tsk 92
+read a new tsk 92
+write a new tsk 93
+read a new tsk 93
+write a new tsk 94
+read a new tsk 94
+write a new tsk 95
+read a new tsk 95
+write a new tsk 96
+read a new tsk 96
+write a new tsk 97
+read a new tsk 97
+write a new tsk 98
+read a new tsk 98
+write a new tsk 99
+read a new tsk 99
+write a new tsk 100
+read a new tsk 100
+write a new tsk 101
+read a new tsk 101
+write a new tsk 102
+read a new tsk 102
+write a new tsk 103
+read a new tsk 103
+write a new tsk 104
+read a new tsk 104
+write a new tsk 105
+read a new tsk 105
+write a new tsk 106
+read a new tsk 106
+write a new tsk 107
+read a new tsk 107
+write a new tsk 108
+read a new tsk 108
+write a new tsk 109
+read a new tsk 109
+write a new tsk 110
+read a new tsk 110
+write a new tsk 111
+read a new tsk 111
+write a new tsk 112
+read a new tsk 112
+write a new tsk 113
+read a new tsk 113
+write a new tsk 114
+read a new tsk 114
+write a new tsk 115
+read a new tsk 115
+write a new tsk 116
+read a new tsk 116
+write a new tsk 117
+read a new tsk 117
+write a new tsk 118
+read a new tsk 118
+write a new tsk 119
+read a new tsk 119
+write a new tsk 120
+read a new tsk 120
+write a new tsk 121
+read a new tsk 121
+write a new tsk 122
+read a new tsk 122
+write a new tsk 123
+read a new tsk 123
+write a new tsk 124
+read a new tsk 124
+write a new tsk 125
+read a new tsk 125
+write a new tsk 126
+read a new tsk 126
+write a new tsk 127
+read a new tsk 127
+write a new tsk 128
+read a new tsk 128
+write a new tsk 129
+read a new tsk 129
+write a new tsk 130
+read a new tsk 130
+write a new tsk 131
+read a new tsk 131
+write a new tsk 132
+read a new tsk 132
+write a new tsk 133
+read a new tsk 133
+write a new tsk 134
+read a new tsk 134
+write a new tsk 135
+read a new tsk 135
+write a new tsk 136
+read a new tsk 136
+write a new tsk 137
+read a new tsk 137
+write a new tsk 138
+read a new tsk 138
+write a new tsk 139
+read a new tsk 139
+write a new tsk 140
+read a new tsk 140
+write a new tsk 141
+read a new tsk 141
+write a new tsk 142
+read a new tsk 142
+write a new tsk 143
+read a new tsk 143
+write a new tsk 144
+read a new tsk 144
+write a new tsk 145
+read a new tsk 145
+write a new tsk 146
+read a new tsk 146
+write a new tsk 147
+read a new tsk 147
+write a new tsk 148
+read a new tsk 148
+write a new tsk 149
+read a new tsk 149
+write a new tsk 150
+read a new tsk 150
+write a new tsk 151
+read a new tsk 151
+write a new tsk 152
+read a new tsk 152
+write a new tsk 153
+read a new tsk 153
+write a new tsk 154
+read a new tsk 154
+write a new tsk 155
+read a new tsk 155
+write a new tsk 156
+read a new tsk 156
+write a new tsk 157
+read a new tsk 157
+write a new tsk 158
+read a new tsk 158
+write a new tsk 159
+read a new tsk 159
+write a new tsk 160
+read a new tsk 160
+write a new tsk 161
+read a new tsk 161
+write a new tsk 162
+read a new tsk 162
+write a new tsk 163
+read a new tsk 163
+write a new tsk 164
+read a new tsk 164
+write a new tsk 165
+read a new tsk 165
+write a new tsk 166
+read a new tsk 166
+write a new tsk 167
+read a new tsk 167
+write a new tsk 168
+read a new tsk 168
+write a new tsk 169
+read a new tsk 169
+write a new tsk 170
+read a new tsk 170
+write a new tsk 171
+read a new tsk 171
+write a new tsk 172
+read a new tsk 172
+write a new tsk 173
+read a new tsk 173
+write a new tsk 174
+read a new tsk 174
+write a new tsk 175
+read a new tsk 175
+write a new tsk 176
+read a new tsk 176
+write a new tsk 177
+read a new tsk 177
+write a new tsk 178
+read a new tsk 178
+write a new tsk 179
+read a new tsk 179
+write a new tsk 180
+read a new tsk 180
+write a new tsk 181
+read a new tsk 181
+write a new tsk 182
+read a new tsk 182
+write a new tsk 183
+read a new tsk 183
+write a new tsk 184
+read a new tsk 184
+write a new tsk 185
+read a new tsk 185
+write a new tsk 186
+read a new tsk 186
+write a new tsk 187
+read a new tsk 187
+write a new tsk 188
+read a new tsk 188
+write a new tsk 189
+read a new tsk 189
+write a new tsk 190
+read a new tsk 190
+write a new tsk 191
+read a new tsk 191
+write a new tsk 192
+read a new tsk 192
+write a new tsk 193
+read a new tsk 193
+write a new tsk 194
+read a new tsk 194
+write a new tsk 195
+read a new tsk 195
+write a new tsk 196
+read a new tsk 196
+write a new tsk 197
+read a new tsk 197
+write a new tsk 198
+read a new tsk 198
+write a new tsk 199
+read a new tsk 199
+write a new tsk 200
+read a new tsk 200
+write a new tsk 201
+read a new tsk 201
+write a new tsk 202
+read a new tsk 202
+write a new tsk 203
+read a new tsk 203
+write a new tsk 204
+read a new tsk 204
+write a new tsk 205
+read a new tsk 205
+write a new tsk 206
+read a new tsk 206
+write a new tsk 207
+read a new tsk 207
+write a new tsk 208
+read a new tsk 208
+write a new tsk 209
+read a new tsk 209
+write a new tsk 210
+read a new tsk 210
+write a new tsk 211
+read a new tsk 211
+write a new tsk 212
+read a new tsk 212
+write a new tsk 213
+read a new tsk 213
+write a new tsk 214
+read a new tsk 214
+write a new tsk 215
+read a new tsk 215
+write a new tsk 216
+read a new tsk 216
+write a new tsk 217
+read a new tsk 217
+write a new tsk 218
+read a new tsk 218
+write a new tsk 219
+read a new tsk 219
+write a new tsk 220
+read a new tsk 220
+write a new tsk 221
+read a new tsk 221
+write a new tsk 222
+read a new tsk 222
+write a new tsk 223
+read a new tsk 223
+write a new tsk 224
+read a new tsk 224
+write a new tsk 225
+read a new tsk 225
+write a new tsk 226
+read a new tsk 226
+write a new tsk 227
+read a new tsk 227
+write a new tsk 228
+read a new tsk 228
+write a new tsk 229
+read a new tsk 229
+write a new tsk 230
+read a new tsk 230
+write a new tsk 231
+read a new tsk 231
+write a new tsk 232
+read a new tsk 232
+write a new tsk 233
+read a new tsk 233
+write a new tsk 234
+read a new tsk 234
+write a new tsk 235
+read a new tsk 235
+write a new tsk 236
+read a new tsk 236
+write a new tsk 237
+read a new tsk 237
+write a new tsk 238
+read a new tsk 238
+write a new tsk 239
+read a new tsk 239
+write a new tsk 240
+read a new tsk 240
+write a new tsk 241
+read a new tsk 241
+write a new tsk 242
+read a new tsk 242
+write a new tsk 243
+read a new tsk 243
+write a new tsk 244
+read a new tsk 244
+write a new tsk 245
+read a new tsk 245
+write a new tsk 246
+read a new tsk 246
+write a new tsk 247
+read a new tsk 247
+write a new tsk 248
+read a new tsk 248
+write a new tsk 249
+read a new tsk 249
+write a new tsk 250
+read a new tsk 250
+write a new tsk 251
+read a new tsk 251
+write a new tsk 252
+read a new tsk 252
+write a new tsk 253
+read a new tsk 253
+write a new tsk 254
+read a new tsk 254
+write a new tsk 255
+read a new tsk 255
+write a new tsk 256
+read a new tsk 256
+Find Attacker
+20 is attacker!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.57 seconds. CPU system time: 0.3 seconds. Elapsed time: 3 seconds; current allocated memory: -1033.656 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 459.500 MB.
+INFO: [HLS 200-10] Analyzing design file '../hls/scadet_v4.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.02 seconds. CPU system time: 0.26 seconds. Elapsed time: 2.27 seconds; current allocated memory: 461.859 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-191] The stream pragma on function argument, in 'call' is unsupported (../hls/scadet_v4.cpp:10:9)
+WARNING: [HLS 214-191] The stream pragma on function argument, in 'call' is unsupported (../hls/scadet_v4.cpp:11:9)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_276_6' (../hls/scadet_v4.cpp:276:31) in function 'scadet_v4' completely with a factor of 16 (../hls/scadet_v4.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_183_2' (../hls/scadet_v4.cpp:183:31) in function 'scadet_v4' completely with a factor of 16 (../hls/scadet_v4.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_198_3' (../hls/scadet_v4.cpp:198:35) in function 'scadet_v4' completely with a factor of 16 (../hls/scadet_v4.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_207_4' (../hls/scadet_v4.cpp:207:35) in function 'scadet_v4' completely with a factor of 16 (../hls/scadet_v4.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_173_1' (../hls/scadet_v4.cpp:173:27) in function 'scadet_v4' completely with a factor of 16 (../hls/scadet_v4.cpp:9:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ9scadet_v4RN3hls6streamI7ap_uintILi96EELi0EEERNS0_IS1_ILi24EELi0EEEPS1_ILi512EES9_E8tagArray': Complete partitioning on dimension 1. (../hls/scadet_v4.cpp:104:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'outStream' with compact=bit mode in 24-bits (../hls/scadet_v4.cpp:9:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'inStream' with compact=bit mode in 96-bits (../hls/scadet_v4.cpp:9:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'cntPort' with compact=none mode in 512-bits
+INFO: [HLS 214-241] Aggregating maxi variable 'tagPort' with compact=none mode in 512-bits
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 512 in loop 'Evict_Tag_List_Loop'(../hls/scadet_v4.cpp:223:17) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../hls/scadet_v4.cpp:223:17)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 512 in loop 'VITIS_LOOP_238_5'(../hls/scadet_v4.cpp:238:35) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../hls/scadet_v4.cpp:238:35)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 512 in loop 'Load_Tag_List_Loop'(../hls/scadet_v4.cpp:249:13) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../hls/scadet_v4.cpp:249:13)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 512 in loop 'Load_Cnt_List_Loop'(../hls/scadet_v4.cpp:259:13) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../hls/scadet_v4.cpp:259:13)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint<24>s' into 'scadet_v4(hls::stream<ap_uint<96>, 0>&, hls::stream<ap_uint<24>, 0>&, ap_uint<512>*, ap_uint<512>*)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i24.s_struct.ap_uint<24>s.1' into 'scadet_v4(hls::stream<ap_uint<96>, 0>&, hls::stream<ap_uint<24>, 0>&, ap_uint<512>*, ap_uint<512>*)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.07 seconds. CPU system time: 0.25 seconds. Elapsed time: 4.31 seconds; current allocated memory: 464.023 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 464.023 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 481.238 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:850: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 496.480 MB.
+INFO: [XFORM 203-102] Automatically partitioning small array 'sets_bitmap.V' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'sets_bitmap.V' in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../hls/scadet_v4.cpp:384:21) in function 'scadet_v4'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../hls/scadet_v4.cpp:518:25) in function 'scadet_v4'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../hls/scadet_v4.cpp:398:21) in function 'scadet_v4'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'scadet_v4' (../hls/scadet_v4.cpp:3:25)...15 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.37 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.38 seconds; current allocated memory: 547.547 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'tag_dataArray.V' (../hls/scadet_v4.cpp:256:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'cnt_dataArray.V' (../hls/scadet_v4.cpp:265:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'cnt_dataArray.V' (../hls/scadet_v4.cpp:381:67)
+INFO: [HLS 200-472] Inferring partial write operation for 'cnt_dataArray.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'cnt_dataArray.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'uni_dqpns_array.V' (../hls/scadet_v4.cpp:397:50)
+INFO: [HLS 200-472] Inferring partial write operation for 'uni_dqpns_array.V' (../hls/scadet_v4.cpp:407:50)
+INFO: [HLS 200-472] Inferring partial write operation for 'tag_dataArray.V' (../hls/scadet_v4.cpp:439:68)
+INFO: [HLS 200-472] Inferring partial write operation for 'cnt_dataArray.V' (../hls/scadet_v4.cpp:488:68)
+INFO: [HLS 200-472] Inferring partial write operation for 'tag_dataArray.V' (../hls/scadet_v4.cpp:514:68)
+INFO: [HLS 200-472] Inferring partial write operation for 'uni_tags_array.V' (../hls/scadet_v4.cpp:517:45)
+INFO: [HLS 200-472] Inferring partial write operation for 'uni_dqpns_array.V' (../hls/scadet_v4.cpp:519:50)
+INFO: [HLS 200-472] Inferring partial write operation for 'tag_dataArray.V' (../hls/scadet_v4.cpp:553:47)
+INFO: [HLS 200-472] Inferring partial write operation for 'cnt_dataArray.V' (../hls/scadet_v4.cpp:558:47)
+INFO: [HLS 200-472] Inferring partial write operation for 'uni_tags_array.V' (../hls/scadet_v4.cpp:563:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'uni_dqpns_array.V' (../hls/scadet_v4.cpp:564:38)
+INFO: [HLS 200-472] Inferring partial write operation for 'prev_ts_array.V' (../hls/scadet_v4.cpp:566:32)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 623.445 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'scadet_v4' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4_Pipeline_Evict_Tag_List_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Evict_Tag_List_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Evict_Tag_List_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 624.855 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 624.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4_Pipeline_VITIS_LOOP_238_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_238_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_238_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 625.062 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 625.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4_Pipeline_Load_Tag_List_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Load_Tag_List_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Load_Tag_List_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 625.332 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 625.332 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4_Pipeline_Load_Cnt_List_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Load_Cnt_List_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Load_Cnt_List_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 625.598 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 625.598 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4_Pipeline_Search_Tag_Line_Loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Search_Tag_Line_Loop_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Search_Tag_Line_Loop_1'
+WARNING: [HLS 200-871] Estimated clock period (4.98827ns) exceeds the target (target clock period: 4ns, clock uncertainty: 1.08ns, effective delay budget: 2.92ns).
+Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'scadet_v4_Pipeline_Search_Tag_Line_Loop_1' consists of the following:	'alloca' operation ('j') [6]  (0 ns)
+	'load' operation ('j', ../hls/scadet_v4.cpp:308) on local variable 'j' [16]  (0 ns)
+	'add' operation ('j', ../hls/scadet_v4.cpp:308) [22]  (0.572 ns)
+	'add' operation ('add_ln308_3', ../hls/scadet_v4.cpp:308) [28]  (0.708 ns)
+	'icmp' operation ('icmp_ln674') [32]  (0.593 ns)
+	'select' operation ('select_ln674_1') [40]  (0 ns)
+	'lshr' operation ('lshr_ln674') [45]  (1.44 ns)
+	'and' operation ('__Result__') [47]  (0 ns)
+	'icmp' operation ('icmp_ln1065') [52]  (1.04 ns)
+	'and' operation ('and_ln310', ../hls/scadet_v4.cpp:310) [54]  (0.122 ns)
+	multiplexor before 'phi' operation ('merge') [60]  (0.387 ns)
+	blocking operation 0.122 ns on control path)
+
+Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 626.125 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 626.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4_Pipeline_Search_Cnt_Line_Loop_For_Evict' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Search_Cnt_Line_Loop_For_Evict'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Search_Cnt_Line_Loop_For_Evict'
+WARNING: [HLS 200-871] Estimated clock period (3.31237ns) exceeds the target (target clock period: 4ns, clock uncertainty: 1.08ns, effective delay budget: 2.92ns).
+Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'scadet_v4_Pipeline_Search_Cnt_Line_Loop_For_Evict' consists of the following:	'alloca' operation ('j') [7]  (0 ns)
+	'load' operation ('j', ../hls/scadet_v4.cpp:327) on local variable 'j' [16]  (0 ns)
+	'or' operation ('or_ln328_1', ../hls/scadet_v4.cpp:328) [31]  (0 ns)
+	'icmp' operation ('icmp_ln674') [32]  (0.593 ns)
+	'select' operation ('select_ln674_6') [41]  (0 ns)
+	'lshr' operation ('lshr_ln674') [45]  (1.44 ns)
+	'and' operation ('__Result__') [47]  (0 ns)
+	'icmp' operation ('icmp_ln1065') [49]  (0.768 ns)
+	blocking operation 0.509 ns on control path)
+
+Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 626.480 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 626.480 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4_Pipeline_Search_Min_Cnt_Line_Loop_For_Evict' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Search_Min_Cnt_Line_Loop_For_Evict'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'Search_Min_Cnt_Line_Loop_For_Evict'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 627.047 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 627.047 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4_Pipeline_Search_Tag_Line_Loop_For_Evict' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Search_Tag_Line_Loop_For_Evict'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Search_Tag_Line_Loop_For_Evict'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 627.371 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 627.371 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scadet_v4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1559) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln221) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1559_2) to 3 in order to utilize available DSP registers.
+WARNING: [HLS 200-871] Estimated clock period (5.25328ns) exceeds the target (target clock period: 4ns, clock uncertainty: 1.08ns, effective delay budget: 2.92ns).
+Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'scadet_v4' consists of the following:	'call' operation ('targetBlock', ../hls/scadet_v4.cpp:151) to 'scadet_v4_Pipeline_Search_Tag_Line_Loop_1' [583]  (5.25 ns)
+
+Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.73 seconds. CPU system time: 0 seconds. Elapsed time: 0.74 seconds; current allocated memory: 644.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.79 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.79 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4_Pipeline_Evict_Tag_List_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'scadet_v4_Pipeline_Evict_Tag_List_Loop' pipeline 'Evict_Tag_List_Loop' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Evict_Tag_List_Loop/m_axi_gmem0_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4_Pipeline_Evict_Tag_List_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.95 seconds. CPU system time: 0 seconds. Elapsed time: 0.95 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4_Pipeline_VITIS_LOOP_238_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'scadet_v4_Pipeline_VITIS_LOOP_238_5' pipeline 'VITIS_LOOP_238_5' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_VITIS_LOOP_238_5/m_axi_gmem1_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4_Pipeline_VITIS_LOOP_238_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4_Pipeline_Load_Tag_List_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'scadet_v4_Pipeline_Load_Tag_List_Loop' pipeline 'Load_Tag_List_Loop' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Tag_List_Loop/m_axi_gmem0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4_Pipeline_Load_Tag_List_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4_Pipeline_Load_Cnt_List_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'scadet_v4_Pipeline_Load_Cnt_List_Loop' pipeline 'Load_Cnt_List_Loop' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'scadet_v4_Pipeline_Load_Cnt_List_Loop/m_axi_gmem1_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4_Pipeline_Load_Cnt_List_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4_Pipeline_Search_Tag_Line_Loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4_Pipeline_Search_Tag_Line_Loop_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4_Pipeline_Search_Cnt_Line_Loop_For_Evict' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4_Pipeline_Search_Cnt_Line_Loop_For_Evict'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4_Pipeline_Search_Min_Cnt_Line_Loop_For_Evict' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'scadet_v4_Pipeline_Search_Min_Cnt_Line_Loop_For_Evict' pipeline 'Search_Min_Cnt_Line_Loop_For_Evict' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4_Pipeline_Search_Min_Cnt_Line_Loop_For_Evict'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4_Pipeline_Search_Tag_Line_Loop_For_Evict' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4_Pipeline_Search_Tag_Line_Loop_For_Evict'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 644.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scadet_v4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scadet_v4/inStream' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scadet_v4/outStream' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scadet_v4/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'scadet_v4/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'scadet_v4' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'tsk_cnt' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sets_bitmap_V_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sets_bitmap_V_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'validArray_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'scadet_v4_stream_stream_ap_uint_0_ap_uint_512_ap_uint_512_tagArray' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ9scadet_v4RN3hls6streamI7ap_uintILi96EELi0EEERNS0_IS1_ILi24EELi0EEEPS1_ILi512_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ9scadet_v4RN3hls6streamI7ap_uintILi96EELi0EEERNS0_IS1_ILi24EELi0EEEPS1_ILi512_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ9scadet_v4RN3hls6streamI7ap_uintILi96EELi0EEERNS0_IS1_ILi24EELi0EEEPS1_ILi512_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ9scadet_v4RN3hls6streamI7ap_uintILi96EELi0EEERNS0_IS1_ILi24EELi0EEEPS1_ILi512_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ9scadet_v4RN3hls6streamI7ap_uintILi96EELi0EEERNS0_IS1_ILi24EELi0EEEPS1_ILi512_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ9scadet_v4RN3hls6streamI7ap_uintILi96EELi0EEERNS0_IS1_ILi24EELi0EEEPS1_ILi512' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'mruArray_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'tag_dirt_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'cnt_dirt_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'isEvict' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'cnt_insert_idx_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'cnt_insert_idy_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'cnt_insert_val_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'evict_idy_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'evict_dqpn_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'dqpn_hit_idx_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'dqpn_hit_idy_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'dqpn_hit_cnt_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'cnt_evict_line_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'tags_evict_idx_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'tags_evict_idy_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'cnt_insert_line_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'tags_insert_line_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'tags_beat_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'cnt_beat_V' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_8ns_3ns_10ns_19_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_6ns_9_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_10ns_5ns_15_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scadet_v4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.33 seconds. CPU system time: 0 seconds. Elapsed time: 0.34 seconds; current allocated memory: 655.480 MB.
+INFO: [RTMG 210-278] Implementing memory 'scadet_v4_prev_ts_array_V_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'scadet_v4_uni_tags_array_V_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'scadet_v4_tag_dataArray_V_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'scadet_v4_cnt_dataArray_V_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.34 seconds. CPU system time: 0.02 seconds. Elapsed time: 3.35 seconds; current allocated memory: 681.750 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.51 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.52 seconds; current allocated memory: 685.242 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for scadet_v4.
+INFO: [VLOG 209-307] Generating Verilog RTL for scadet_v4.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 190.36 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 14.54 seconds. CPU system time: 0.63 seconds. Elapsed time: 15.18 seconds; current allocated memory: 225.836 MB.
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all -enable_dataflow_profiling -ldflags -z stack-size=10485760 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_scadet_v4_util.cpp
+   Compiling apatb_scadet_v4.cpp
+   Compiling scadet_v4.cpp_pre.cpp.tb.cpp
+   Compiling scadet_v4_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_scadet_v4_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+VictimAddr = 7f62aa625577
+secId - 549
+write a new tsk 0
+read a new tsk 0
+write a new tsk 1
+read a new tsk 1
+write a new tsk 2
+read a new tsk 2
+write a new tsk 3
+read a new tsk 3
+write a new tsk 4
+read a new tsk 4
+write a new tsk 5
+read a new tsk 5
+write a new tsk 6
+read a new tsk 6
+write a new tsk 7
+read a new tsk 7
+write a new tsk 8
+read a new tsk 8
+write a new tsk 9
+read a new tsk 9
+write a new tsk 10
+read a new tsk 10
+write a new tsk 11
+read a new tsk 11
+write a new tsk 12
+read a new tsk 12
+write a new tsk 13
+read a new tsk 13
+write a new tsk 14
+read a new tsk 14
+write a new tsk 15
+read a new tsk 15
+write a new tsk 16
+read a new tsk 16
+write a new tsk 17
+read a new tsk 17
+write a new tsk 18
+read a new tsk 18
+write a new tsk 19
+read a new tsk 19
+write a new tsk 20
+read a new tsk 20
+write a new tsk 21
+read a new tsk 21
+write a new tsk 22
+read a new tsk 22
+write a new tsk 23
+read a new tsk 23
+write a new tsk 24
+read a new tsk 24
+write a new tsk 25
+read a new tsk 25
+write a new tsk 26
+read a new tsk 26
+write a new tsk 27
+read a new tsk 27
+write a new tsk 28
+read a new tsk 28
+write a new tsk 29
+read a new tsk 29
+write a new tsk 30
+read a new tsk 30
+write a new tsk 31
+read a new tsk 31
+write a new tsk 32
+read a new tsk 32
+write a new tsk 33
+read a new tsk 33
+write a new tsk 34
+read a new tsk 34
+write a new tsk 35
+read a new tsk 35
+write a new tsk 36
+read a new tsk 36
+write a new tsk 37
+read a new tsk 37
+write a new tsk 38
+read a new tsk 38
+write a new tsk 39
+read a new tsk 39
+write a new tsk 40
+read a new tsk 40
+write a new tsk 41
+read a new tsk 41
+write a new tsk 42
+read a new tsk 42
+write a new tsk 43
+read a new tsk 43
+write a new tsk 44
+read a new tsk 44
+write a new tsk 45
+read a new tsk 45
+write a new tsk 46
+read a new tsk 46
+write a new tsk 47
+read a new tsk 47
+write a new tsk 48
+read a new tsk 48
+write a new tsk 49
+read a new tsk 49
+write a new tsk 50
+read a new tsk 50
+write a new tsk 51
+read a new tsk 51
+write a new tsk 52
+read a new tsk 52
+write a new tsk 53
+read a new tsk 53
+write a new tsk 54
+read a new tsk 54
+write a new tsk 55
+read a new tsk 55
+write a new tsk 56
+read a new tsk 56
+write a new tsk 57
+read a new tsk 57
+write a new tsk 58
+read a new tsk 58
+write a new tsk 59
+read a new tsk 59
+write a new tsk 60
+read a new tsk 60
+write a new tsk 61
+read a new tsk 61
+write a new tsk 62
+read a new tsk 62
+write a new tsk 63
+read a new tsk 63
+write a new tsk 64
+read a new tsk 64
+write a new tsk 65
+read a new tsk 65
+write a new tsk 66
+read a new tsk 66
+write a new tsk 67
+read a new tsk 67
+write a new tsk 68
+read a new tsk 68
+write a new tsk 69
+read a new tsk 69
+write a new tsk 70
+read a new tsk 70
+write a new tsk 71
+read a new tsk 71
+write a new tsk 72
+read a new tsk 72
+write a new tsk 73
+read a new tsk 73
+write a new tsk 74
+read a new tsk 74
+write a new tsk 75
+read a new tsk 75
+write a new tsk 76
+read a new tsk 76
+write a new tsk 77
+read a new tsk 77
+write a new tsk 78
+read a new tsk 78
+write a new tsk 79
+read a new tsk 79
+write a new tsk 80
+read a new tsk 80
+write a new tsk 81
+read a new tsk 81
+write a new tsk 82
+read a new tsk 82
+write a new tsk 83
+read a new tsk 83
+write a new tsk 84
+read a new tsk 84
+write a new tsk 85
+read a new tsk 85
+write a new tsk 86
+read a new tsk 86
+write a new tsk 87
+read a new tsk 87
+write a new tsk 88
+read a new tsk 88
+write a new tsk 89
+read a new tsk 89
+write a new tsk 90
+read a new tsk 90
+write a new tsk 91
+read a new tsk 91
+write a new tsk 92
+read a new tsk 92
+write a new tsk 93
+read a new tsk 93
+write a new tsk 94
+read a new tsk 94
+write a new tsk 95
+read a new tsk 95
+write a new tsk 96
+read a new tsk 96
+write a new tsk 97
+read a new tsk 97
+write a new tsk 98
+read a new tsk 98
+write a new tsk 99
+read a new tsk 99
+write a new tsk 100
+read a new tsk 100
+write a new tsk 101
+read a new tsk 101
+write a new tsk 102
+read a new tsk 102
+write a new tsk 103
+read a new tsk 103
+write a new tsk 104
+read a new tsk 104
+write a new tsk 105
+read a new tsk 105
+write a new tsk 106
+read a new tsk 106
+write a new tsk 107
+read a new tsk 107
+write a new tsk 108
+read a new tsk 108
+write a new tsk 109
+read a new tsk 109
+write a new tsk 110
+read a new tsk 110
+write a new tsk 111
+read a new tsk 111
+write a new tsk 112
+read a new tsk 112
+write a new tsk 113
+read a new tsk 113
+write a new tsk 114
+read a new tsk 114
+write a new tsk 115
+read a new tsk 115
+write a new tsk 116
+read a new tsk 116
+write a new tsk 117
+read a new tsk 117
+write a new tsk 118
+read a new tsk 118
+write a new tsk 119
+read a new tsk 119
+write a new tsk 120
+read a new tsk 120
+write a new tsk 121
+read a new tsk 121
+write a new tsk 122
+read a new tsk 122
+write a new tsk 123
+read a new tsk 123
+write a new tsk 124
+read a new tsk 124
+write a new tsk 125
+read a new tsk 125
+write a new tsk 126
+read a new tsk 126
+write a new tsk 127
+read a new tsk 127
+write a new tsk 128
+read a new tsk 128
+write a new tsk 129
+read a new tsk 129
+write a new tsk 130
+read a new tsk 130
+write a new tsk 131
+read a new tsk 131
+write a new tsk 132
+read a new tsk 132
+write a new tsk 133
+read a new tsk 133
+write a new tsk 134
+read a new tsk 134
+write a new tsk 135
+read a new tsk 135
+write a new tsk 136
+read a new tsk 136
+write a new tsk 137
+read a new tsk 137
+write a new tsk 138
+read a new tsk 138
+write a new tsk 139
+read a new tsk 139
+write a new tsk 140
+read a new tsk 140
+write a new tsk 141
+read a new tsk 141
+write a new tsk 142
+read a new tsk 142
+write a new tsk 143
+read a new tsk 143
+write a new tsk 144
+read a new tsk 144
+write a new tsk 145
+read a new tsk 145
+write a new tsk 146
+read a new tsk 146
+write a new tsk 147
+read a new tsk 147
+write a new tsk 148
+read a new tsk 148
+write a new tsk 149
+read a new tsk 149
+write a new tsk 150
+read a new tsk 150
+write a new tsk 151
+read a new tsk 151
+write a new tsk 152
+read a new tsk 152
+write a new tsk 153
+read a new tsk 153
+write a new tsk 154
+read a new tsk 154
+write a new tsk 155
+read a new tsk 155
+write a new tsk 156
+read a new tsk 156
+write a new tsk 157
+read a new tsk 157
+write a new tsk 158
+read a new tsk 158
+write a new tsk 159
+read a new tsk 159
+write a new tsk 160
+read a new tsk 160
+write a new tsk 161
+read a new tsk 161
+write a new tsk 162
+read a new tsk 162
+write a new tsk 163
+read a new tsk 163
+write a new tsk 164
+read a new tsk 164
+write a new tsk 165
+read a new tsk 165
+write a new tsk 166
+read a new tsk 166
+write a new tsk 167
+read a new tsk 167
+write a new tsk 168
+read a new tsk 168
+write a new tsk 169
+read a new tsk 169
+write a new tsk 170
+read a new tsk 170
+write a new tsk 171
+read a new tsk 171
+write a new tsk 172
+read a new tsk 172
+write a new tsk 173
+read a new tsk 173
+write a new tsk 174
+read a new tsk 174
+write a new tsk 175
+read a new tsk 175
+write a new tsk 176
+read a new tsk 176
+write a new tsk 177
+read a new tsk 177
+write a new tsk 178
+read a new tsk 178
+write a new tsk 179
+read a new tsk 179
+write a new tsk 180
+read a new tsk 180
+write a new tsk 181
+read a new tsk 181
+write a new tsk 182
+read a new tsk 182
+write a new tsk 183
+read a new tsk 183
+write a new tsk 184
+read a new tsk 184
+write a new tsk 185
+read a new tsk 185
+write a new tsk 186
+read a new tsk 186
+write a new tsk 187
+read a new tsk 187
+write a new tsk 188
+read a new tsk 188
+write a new tsk 189
+read a new tsk 189
+write a new tsk 190
+read a new tsk 190
+write a new tsk 191
+read a new tsk 191
+write a new tsk 192
+read a new tsk 192
+write a new tsk 193
+read a new tsk 193
+write a new tsk 194
+read a new tsk 194
+write a new tsk 195
+read a new tsk 195
+write a new tsk 196
+read a new tsk 196
+write a new tsk 197
+read a new tsk 197
+write a new tsk 198
+read a new tsk 198
+write a new tsk 199
+read a new tsk 199
+write a new tsk 200
+read a new tsk 200
+write a new tsk 201
+read a new tsk 201
+write a new tsk 202
+read a new tsk 202
+write a new tsk 203
+read a new tsk 203
+write a new tsk 204
+read a new tsk 204
+write a new tsk 205
+read a new tsk 205
+write a new tsk 206
+read a new tsk 206
+write a new tsk 207
+read a new tsk 207
+write a new tsk 208
+read a new tsk 208
+write a new tsk 209
+read a new tsk 209
+write a new tsk 210
+read a new tsk 210
+write a new tsk 211
+read a new tsk 211
+write a new tsk 212
+read a new tsk 212
+write a new tsk 213
+read a new tsk 213
+write a new tsk 214
+read a new tsk 214
+write a new tsk 215
+read a new tsk 215
+write a new tsk 216
+read a new tsk 216
+write a new tsk 217
+read a new tsk 217
+write a new tsk 218
+read a new tsk 218
+write a new tsk 219
+read a new tsk 219
+write a new tsk 220
+read a new tsk 220
+write a new tsk 221
+read a new tsk 221
+write a new tsk 222
+read a new tsk 222
+write a new tsk 223
+read a new tsk 223
+write a new tsk 224
+read a new tsk 224
+write a new tsk 225
+read a new tsk 225
+write a new tsk 226
+read a new tsk 226
+write a new tsk 227
+read a new tsk 227
+write a new tsk 228
+read a new tsk 228
+write a new tsk 229
+read a new tsk 229
+write a new tsk 230
+read a new tsk 230
+write a new tsk 231
+read a new tsk 231
+write a new tsk 232
+read a new tsk 232
+write a new tsk 233
+read a new tsk 233
+write a new tsk 234
+read a new tsk 234
+write a new tsk 235
+read a new tsk 235
+write a new tsk 236
+read a new tsk 236
+write a new tsk 237
+read a new tsk 237
+write a new tsk 238
+read a new tsk 238
+write a new tsk 239
+read a new tsk 239
+write a new tsk 240
+read a new tsk 240
+write a new tsk 241
+read a new tsk 241
+write a new tsk 242
+read a new tsk 242
+write a new tsk 243
+read a new tsk 243
+write a new tsk 244
+read a new tsk 244
+write a new tsk 245
+read a new tsk 245
+write a new tsk 246
+read a new tsk 246
+write a new tsk 247
+read a new tsk 247
+write a new tsk 248
+read a new tsk 248
+write a new tsk 249
+read a new tsk 249
+write a new tsk 250
+read a new tsk 250
+write a new tsk 251
+read a new tsk 251
+write a new tsk 252
+read a new tsk 252
+write a new tsk 253
+read a new tsk 253
+write a new tsk 254
+read a new tsk 254
+write a new tsk 255
+read a new tsk 255
+write a new tsk 256
+read a new tsk 256
+Find Attacker
+20 is attacker!
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_scadet_v4_top glbl -Oenable_linking_all_libraries -prj scadet_v4.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s scadet_v4 -debug wave 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_scadet_v4_Pipeline_Search_Cnt_Line_Loop_For_Evict.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_scadet_v4_Pipeline_Search_Cnt_Line_Loop_For_Evict
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/AESL_autofifo_outStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_outStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_scadet_v4_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_mul_4ns_6ns_9_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_mul_4ns_6ns_9_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_am_addmul_8ns_3ns_10ns_19_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_am_addmul_8ns_3ns_10ns_19_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module scadet_v4_am_addmul_8ns_3ns_10ns_19_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_scadet_v4_Pipeline_Evict_Tag_List_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_scadet_v4_Pipeline_Evict_Tag_List_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_scadet_v4_Pipeline_Search_Tag_Line_Loop_For_Evict.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_scadet_v4_Pipeline_Search_Tag_Line_Loop_For_Evict
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_uni_tags_array_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_uni_tags_array_V_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_gmem0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_load
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_store
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_flushManager
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_read
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_write
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_srl
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem0_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_scadet_v4_Pipeline_Search_Tag_Line_Loop_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_scadet_v4_Pipeline_Search_Tag_Line_Loop_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_scadet_v4_Pipeline_VITIS_LOOP_238_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_scadet_v4_Pipeline_VITIS_LOOP_238_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_cnt_dataArray_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_cnt_dataArray_V_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_gmem1_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_load
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_store
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_flushManager
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_read
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_write
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_srl
+INFO: [VRFC 10-311] analyzing module scadet_v4_gmem1_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_tag_dataArray_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_tag_dataArray_V_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/AESL_axi_master_gmem1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/AESL_axi_master_gmem0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_scadet_v4_Pipeline_Load_Cnt_List_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_scadet_v4_Pipeline_Load_Cnt_List_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_scadet_v4_Pipeline_Load_Tag_List_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_scadet_v4_Pipeline_Load_Tag_List_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_prev_ts_array_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_prev_ts_array_V_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_mul_mul_10ns_5ns_15_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_mul_mul_10ns_5ns_15_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module scadet_v4_mul_mul_10ns_5ns_15_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/AESL_autofifo_inStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_inStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4_scadet_v4_Pipeline_Search_Min_Cnt_Line_Loop_For_Evict.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scadet_v4_scadet_v4_Pipeline_Search_Min_Cnt_Line_Loop_For_Evict
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.scadet_v4_prev_ts_array_V_RAM_AU...
+Compiling module xil_defaultlib.scadet_v4_uni_tags_array_V_RAM_A...
+Compiling module xil_defaultlib.scadet_v4_tag_dataArray_V_RAM_AU...
+Compiling module xil_defaultlib.scadet_v4_cnt_dataArray_V_RAM_AU...
+Compiling module xil_defaultlib.scadet_v4_flow_control_loop_pipe...
+Compiling module xil_defaultlib.scadet_v4_scadet_v4_Pipeline_Evi...
+Compiling module xil_defaultlib.scadet_v4_scadet_v4_Pipeline_VIT...
+Compiling module xil_defaultlib.scadet_v4_scadet_v4_Pipeline_Loa...
+Compiling module xil_defaultlib.scadet_v4_scadet_v4_Pipeline_Loa...
+Compiling module xil_defaultlib.scadet_v4_scadet_v4_Pipeline_Sea...
+Compiling module xil_defaultlib.scadet_v4_scadet_v4_Pipeline_Sea...
+Compiling module xil_defaultlib.scadet_v4_scadet_v4_Pipeline_Sea...
+Compiling module xil_defaultlib.scadet_v4_scadet_v4_Pipeline_Sea...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_mem(MEM_ST...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_fifo(MEM_S...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_store(C_TA...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_mem(MEM_ST...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_fifo(MEM_S...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_load(C_TAR...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_reg_slice(...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_reg_slice(...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_throttle(C...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_reg_slice(...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_write(CONS...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_reg_slice(...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi_read(C_USE...
+Compiling module xil_defaultlib.scadet_v4_gmem0_m_axi(CONSERVATI...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_mem(MEM_ST...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_fifo(MEM_S...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_store(C_TA...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_mem(MEM_ST...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_fifo(MEM_S...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_load(C_TAR...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_reg_slice(...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_reg_slice(...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_throttle(C...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_reg_slice(...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_write(CONS...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_reg_slice(...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi_read(C_USE...
+Compiling module xil_defaultlib.scadet_v4_gmem1_m_axi(CONSERVATI...
+Compiling module xil_defaultlib.scadet_v4_mul_4ns_6ns_9_1_1(NUM_...
+Compiling module xil_defaultlib.scadet_v4_mul_mul_10ns_5ns_15_4_...
+Compiling module xil_defaultlib.scadet_v4_mul_mul_10ns_5ns_15_4_...
+Compiling module xil_defaultlib.scadet_v4_am_addmul_8ns_3ns_10ns...
+Compiling module xil_defaultlib.scadet_v4_am_addmul_8ns_3ns_10ns...
+Compiling module xil_defaultlib.scadet_v4
+Compiling module xil_defaultlib.AESL_autofifo_inStream
+Compiling module xil_defaultlib.AESL_autofifo_outStream
+Compiling module xil_defaultlib.AESL_axi_master_gmem0
+Compiling module xil_defaultlib.AESL_axi_master_gmem1
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=166)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_scadet_v4_top
+Compiling module work.glbl
+Built simulation snapshot scadet_v4
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/scadet_v4/xsim_script.tcl
+# xsim {scadet_v4} -view {{scadet_v4_dataflow_ana.wcfg}} -tclbatch {scadet_v4.tcl} -protoinst {scadet_v4.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file scadet_v4.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4//AESL_inst_scadet_v4_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4/grp_scadet_v4_Pipeline_Evict_Tag_List_Loop_fu_1281/grp_scadet_v4_Pipeline_Evict_Tag_List_Loop_fu_1281_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4/grp_scadet_v4_Pipeline_Load_Cnt_List_Loop_fu_1314/grp_scadet_v4_Pipeline_Load_Cnt_List_Loop_fu_1314_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4/grp_scadet_v4_Pipeline_Load_Tag_List_Loop_fu_1303/grp_scadet_v4_Pipeline_Load_Tag_List_Loop_fu_1303_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4/grp_scadet_v4_Pipeline_Search_Cnt_Line_Loop_For_Evict_fu_1334/grp_scadet_v4_Pipeline_Search_Cnt_Line_Loop_For_Evict_fu_1334_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4/grp_scadet_v4_Pipeline_Search_Min_Cnt_Line_Loop_For_Evict_fu_1344/grp_scadet_v4_Pipeline_Search_Min_Cnt_Line_Loop_For_Evict_fu_1344_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4/grp_scadet_v4_Pipeline_Search_Tag_Line_Loop_1_fu_1325/grp_scadet_v4_Pipeline_Search_Tag_Line_Loop_1_fu_1325_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4/grp_scadet_v4_Pipeline_Search_Tag_Line_Loop_For_Evict_fu_1367/grp_scadet_v4_Pipeline_Search_Tag_Line_Loop_For_Evict_fu_1367_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_scadet_v4_top/AESL_inst_scadet_v4/grp_scadet_v4_Pipeline_VITIS_LOOP_238_5_fu_1292/grp_scadet_v4_Pipeline_VITIS_LOOP_238_5_fu_1292_activity
+Time resolution is 1 ps
+open_wave_config scadet_v4_dataflow_ana.wcfg
+source scadet_v4.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_master) -into $cinoutgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $return_group]
+## set wdata_group [add_wave_group "Write Channel" -into $return_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $return_group]
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_BID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_RID -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARID -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_WID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem1_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_BID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_RID -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARID -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_WID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/m_axi_gmem0_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(fifo) -into $coutputgroup]
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/outStream_write -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/outStream_full_n -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/outStream_din -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(fifo) -into $cinputgroup]
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/inStream_read -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/inStream_empty_n -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/inStream_dout -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/ap_start -into $blocksiggroup
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/ap_done -into $blocksiggroup
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/ap_idle -into $blocksiggroup
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_scadet_v4_top/AESL_inst_scadet_v4/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_scadet_v4_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_scadet_v4_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_scadet_v4_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_scadet_v4_top/LENGTH_inStream -into $tb_portdepth_group -radix hex
+## add_wave /apatb_scadet_v4_top/LENGTH_outStream -into $tb_portdepth_group -radix hex
+## add_wave /apatb_scadet_v4_top/LENGTH_gmem0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_scadet_v4_top/LENGTH_gmem1 -into $tb_portdepth_group -radix hex
+## set tbcinoutgroup [add_wave_group "C InOuts" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(axi_master) -into $tbcinoutgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $tb_return_group]
+## set wdata_group [add_wave_group "Write Channel" -into $tb_return_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $tb_return_group]
+## add_wave /apatb_scadet_v4_top/gmem1_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_BID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_RID -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARID -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_WID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem1_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_BID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_RID -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARID -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_WID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWID -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/gmem0_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(fifo) -into $tbcoutputgroup]
+## add_wave /apatb_scadet_v4_top/outStream_write -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/outStream_full_n -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/outStream_din -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(fifo) -into $tbcinputgroup]
+## add_wave /apatb_scadet_v4_top/inStream_read -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/inStream_empty_n -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_scadet_v4_top/inStream_dout -into $tb_return_group -radix hex
+## save_wave_config scadet_v4.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 257 [n/a] @ "110000"
+// RTL Simulation : 1 / 257 [n/a] @ "174000"
+// RTL Simulation : 2 / 257 [n/a] @ "302000"
+// RTL Simulation : 3 / 257 [n/a] @ "438000"
+// RTL Simulation : 4 / 257 [n/a] @ "582000"
+// RTL Simulation : 5 / 257 [n/a] @ "734000"
+// RTL Simulation : 6 / 257 [n/a] @ "894000"
+// RTL Simulation : 7 / 257 [n/a] @ "1062000"
+// RTL Simulation : 8 / 257 [n/a] @ "1238000"
+// RTL Simulation : 9 / 257 [n/a] @ "1442000"
+// RTL Simulation : 10 / 257 [n/a] @ "1654000"
+// RTL Simulation : 11 / 257 [n/a] @ "1874000"
+// RTL Simulation : 12 / 257 [n/a] @ "2102000"
+// RTL Simulation : 13 / 257 [n/a] @ "2338000"
+// RTL Simulation : 14 / 257 [n/a] @ "2582000"
+// RTL Simulation : 15 / 257 [n/a] @ "2834000"
+// RTL Simulation : 16 / 257 [n/a] @ "3114000"
+// RTL Simulation : 17 / 257 [n/a] @ "3402000"
+// RTL Simulation : 18 / 257 [n/a] @ "3722000"
+// RTL Simulation : 19 / 257 [n/a] @ "4050000"
+// RTL Simulation : 20 / 257 [n/a] @ "4386000"
+// RTL Simulation : 21 / 257 [n/a] @ "4730000"
+// RTL Simulation : 22 / 257 [n/a] @ "5082000"
+// RTL Simulation : 23 / 257 [n/a] @ "5462000"
+// RTL Simulation : 24 / 257 [n/a] @ "5850000"
+// RTL Simulation : 25 / 257 [n/a] @ "6246000"
+// RTL Simulation : 26 / 257 [n/a] @ "6650000"
+// RTL Simulation : 27 / 257 [n/a] @ "7062000"
+// RTL Simulation : 28 / 257 [n/a] @ "7482000"
+// RTL Simulation : 29 / 257 [n/a] @ "7910000"
+// RTL Simulation : 30 / 257 [n/a] @ "8366000"
+// RTL Simulation : 31 / 257 [n/a] @ "8830000"
+// RTL Simulation : 32 / 257 [n/a] @ "9302000"
+// RTL Simulation : 33 / 257 [n/a] @ "9782000"
+// RTL Simulation : 34 / 257 [n/a] @ "10294000"
+// RTL Simulation : 35 / 257 [n/a] @ "10814000"
+// RTL Simulation : 36 / 257 [n/a] @ "11342000"
+// RTL Simulation : 37 / 257 [n/a] @ "11898000"
+// RTL Simulation : 38 / 257 [n/a] @ "12462000"
+// RTL Simulation : 39 / 257 [n/a] @ "13034000"
+// RTL Simulation : 40 / 257 [n/a] @ "13614000"
+// RTL Simulation : 41 / 257 [n/a] @ "14202000"
+// RTL Simulation : 42 / 257 [n/a] @ "14798000"
+// RTL Simulation : 43 / 257 [n/a] @ "15402000"
+// RTL Simulation : 44 / 257 [n/a] @ "16034000"
+// RTL Simulation : 45 / 257 [n/a] @ "16674000"
+// RTL Simulation : 46 / 257 [n/a] @ "17322000"
+// RTL Simulation : 47 / 257 [n/a] @ "17978000"
+// RTL Simulation : 48 / 257 [n/a] @ "18642000"
+// RTL Simulation : 49 / 257 [n/a] @ "19314000"
+// RTL Simulation : 50 / 257 [n/a] @ "20018000"
+// RTL Simulation : 51 / 257 [n/a] @ "20750000"
+// RTL Simulation : 52 / 257 [n/a] @ "21490000"
+// RTL Simulation : 53 / 257 [n/a] @ "22238000"
+// RTL Simulation : 54 / 257 [n/a] @ "22994000"
+// RTL Simulation : 55 / 257 [n/a] @ "23758000"
+// RTL Simulation : 56 / 257 [n/a] @ "24530000"
+// RTL Simulation : 57 / 257 [n/a] @ "25310000"
+// RTL Simulation : 58 / 257 [n/a] @ "26118000"
+// RTL Simulation : 59 / 257 [n/a] @ "26934000"
+// RTL Simulation : 60 / 257 [n/a] @ "27758000"
+// RTL Simulation : 61 / 257 [n/a] @ "28590000"
+// RTL Simulation : 62 / 257 [n/a] @ "29430000"
+// RTL Simulation : 63 / 257 [n/a] @ "30278000"
+// RTL Simulation : 64 / 257 [n/a] @ "31134000"
+// RTL Simulation : 65 / 257 [n/a] @ "32018000"
+// RTL Simulation : 66 / 257 [n/a] @ "32934000"
+// RTL Simulation : 67 / 257 [n/a] @ "33858000"
+// RTL Simulation : 68 / 257 [n/a] @ "34790000"
+// RTL Simulation : 69 / 257 [n/a] @ "35730000"
+// RTL Simulation : 70 / 257 [n/a] @ "36678000"
+// RTL Simulation : 71 / 257 [n/a] @ "37634000"
+// RTL Simulation : 72 / 257 [n/a] @ "38618000"
+// RTL Simulation : 73 / 257 [n/a] @ "39610000"
+// RTL Simulation : 74 / 257 [n/a] @ "40610000"
+// RTL Simulation : 75 / 257 [n/a] @ "41618000"
+// RTL Simulation : 76 / 257 [n/a] @ "42634000"
+// RTL Simulation : 77 / 257 [n/a] @ "43658000"
+// RTL Simulation : 78 / 257 [n/a] @ "44690000"
+// RTL Simulation : 79 / 257 [n/a] @ "45750000"
+// RTL Simulation : 80 / 257 [n/a] @ "46818000"
+// RTL Simulation : 81 / 257 [n/a] @ "47894000"
+// RTL Simulation : 82 / 257 [n/a] @ "49002000"
+// RTL Simulation : 83 / 257 [n/a] @ "50118000"
+// RTL Simulation : 84 / 257 [n/a] @ "51242000"
+// RTL Simulation : 85 / 257 [n/a] @ "52374000"
+// RTL Simulation : 86 / 257 [n/a] @ "53534000"
+// RTL Simulation : 87 / 257 [n/a] @ "54702000"
+// RTL Simulation : 88 / 257 [n/a] @ "55878000"
+// RTL Simulation : 89 / 257 [n/a] @ "57062000"
+// RTL Simulation : 90 / 257 [n/a] @ "58254000"
+// RTL Simulation : 91 / 257 [n/a] @ "59454000"
+// RTL Simulation : 92 / 257 [n/a] @ "60662000"
+// RTL Simulation : 93 / 257 [n/a] @ "61898000"
+// RTL Simulation : 94 / 257 [n/a] @ "63142000"
+// RTL Simulation : 95 / 257 [n/a] @ "64394000"
+// RTL Simulation : 96 / 257 [n/a] @ "65654000"
+// RTL Simulation : 97 / 257 [n/a] @ "66922000"
+// RTL Simulation : 98 / 257 [n/a] @ "68222000"
+// RTL Simulation : 99 / 257 [n/a] @ "69530000"
+// RTL Simulation : 100 / 257 [n/a] @ "70866000"
+// RTL Simulation : 101 / 257 [n/a] @ "72210000"
+// RTL Simulation : 102 / 257 [n/a] @ "73562000"
+// RTL Simulation : 103 / 257 [n/a] @ "74922000"
+// RTL Simulation : 104 / 257 [n/a] @ "76290000"
+// RTL Simulation : 105 / 257 [n/a] @ "77666000"
+// RTL Simulation : 106 / 257 [n/a] @ "79050000"
+// RTL Simulation : 107 / 257 [n/a] @ "80462000"
+// RTL Simulation : 108 / 257 [n/a] @ "81882000"
+// RTL Simulation : 109 / 257 [n/a] @ "83310000"
+// RTL Simulation : 110 / 257 [n/a] @ "84746000"
+// RTL Simulation : 111 / 257 [n/a] @ "86190000"
+// RTL Simulation : 112 / 257 [n/a] @ "87642000"
+// RTL Simulation : 113 / 257 [n/a] @ "89102000"
+// RTL Simulation : 114 / 257 [n/a] @ "90614000"
+// RTL Simulation : 115 / 257 [n/a] @ "92134000"
+// RTL Simulation : 116 / 257 [n/a] @ "93662000"
+// RTL Simulation : 117 / 257 [n/a] @ "95198000"
+// RTL Simulation : 118 / 257 [n/a] @ "96742000"
+// RTL Simulation : 119 / 257 [n/a] @ "98294000"
+// RTL Simulation : 120 / 257 [n/a] @ "99854000"
+// RTL Simulation : 121 / 257 [n/a] @ "101442000"
+// RTL Simulation : 122 / 257 [n/a] @ "103038000"
+// RTL Simulation : 123 / 257 [n/a] @ "104642000"
+// RTL Simulation : 124 / 257 [n/a] @ "106254000"
+// RTL Simulation : 125 / 257 [n/a] @ "107874000"
+// RTL Simulation : 126 / 257 [n/a] @ "109502000"
+// RTL Simulation : 127 / 257 [n/a] @ "111138000"
+// RTL Simulation : 128 / 257 [n/a] @ "112802000"
+// RTL Simulation : 129 / 257 [n/a] @ "115974000"
+// RTL Simulation : 130 / 257 [n/a] @ "119142000"
+// RTL Simulation : 131 / 257 [n/a] @ "122278000"
+// RTL Simulation : 132 / 257 [n/a] @ "125402000"
+// RTL Simulation : 133 / 257 [n/a] @ "128514000"
+// RTL Simulation : 134 / 257 [n/a] @ "131614000"
+// RTL Simulation : 135 / 257 [n/a] @ "134702000"
+// RTL Simulation : 136 / 257 [n/a] @ "137778000"
+// RTL Simulation : 137 / 257 [n/a] @ "140842000"
+// RTL Simulation : 138 / 257 [n/a] @ "143874000"
+// RTL Simulation : 139 / 257 [n/a] @ "146894000"
+// RTL Simulation : 140 / 257 [n/a] @ "149902000"
+// RTL Simulation : 141 / 257 [n/a] @ "152898000"
+// RTL Simulation : 142 / 257 [n/a] @ "155882000"
+// RTL Simulation : 143 / 257 [n/a] @ "158854000"
+// RTL Simulation : 144 / 257 [n/a] @ "161814000"
+// RTL Simulation : 145 / 257 [n/a] @ "164742000"
+// RTL Simulation : 146 / 257 [n/a] @ "167622000"
+// RTL Simulation : 147 / 257 [n/a] @ "170490000"
+// RTL Simulation : 148 / 257 [n/a] @ "173346000"
+// RTL Simulation : 149 / 257 [n/a] @ "176190000"
+// RTL Simulation : 150 / 257 [n/a] @ "179022000"
+// RTL Simulation : 151 / 257 [n/a] @ "181842000"
+// RTL Simulation : 152 / 257 [n/a] @ "184630000"
+// RTL Simulation : 153 / 257 [n/a] @ "187406000"
+// RTL Simulation : 154 / 257 [n/a] @ "190170000"
+// RTL Simulation : 155 / 257 [n/a] @ "192922000"
+// RTL Simulation : 156 / 257 [n/a] @ "195662000"
+// RTL Simulation : 157 / 257 [n/a] @ "198390000"
+// RTL Simulation : 158 / 257 [n/a] @ "201106000"
+// RTL Simulation : 159 / 257 [n/a] @ "203790000"
+// RTL Simulation : 160 / 257 [n/a] @ "206462000"
+// RTL Simulation : 161 / 257 [n/a] @ "209122000"
+// RTL Simulation : 162 / 257 [n/a] @ "211734000"
+// RTL Simulation : 163 / 257 [n/a] @ "214334000"
+// RTL Simulation : 164 / 257 [n/a] @ "216922000"
+// RTL Simulation : 165 / 257 [n/a] @ "219498000"
+// RTL Simulation : 166 / 257 [n/a] @ "222042000"
+// RTL Simulation : 167 / 257 [n/a] @ "224574000"
+// RTL Simulation : 168 / 257 [n/a] @ "227094000"
+// RTL Simulation : 169 / 257 [n/a] @ "229602000"
+// RTL Simulation : 170 / 257 [n/a] @ "232098000"
+// RTL Simulation : 171 / 257 [n/a] @ "234582000"
+// RTL Simulation : 172 / 257 [n/a] @ "237054000"
+// RTL Simulation : 173 / 257 [n/a] @ "239494000"
+// RTL Simulation : 174 / 257 [n/a] @ "241922000"
+// RTL Simulation : 175 / 257 [n/a] @ "244338000"
+// RTL Simulation : 176 / 257 [n/a] @ "246742000"
+// RTL Simulation : 177 / 257 [n/a] @ "249134000"
+// RTL Simulation : 178 / 257 [n/a] @ "251478000"
+// RTL Simulation : 179 / 257 [n/a] @ "253810000"
+// RTL Simulation : 180 / 257 [n/a] @ "256110000"
+// RTL Simulation : 181 / 257 [n/a] @ "258398000"
+// RTL Simulation : 182 / 257 [n/a] @ "260674000"
+// RTL Simulation : 183 / 257 [n/a] @ "262938000"
+// RTL Simulation : 184 / 257 [n/a] @ "265190000"
+// RTL Simulation : 185 / 257 [n/a] @ "267430000"
+// RTL Simulation : 186 / 257 [n/a] @ "269658000"
+// RTL Simulation : 187 / 257 [n/a] @ "271854000"
+// RTL Simulation : 188 / 257 [n/a] @ "274038000"
+// RTL Simulation : 189 / 257 [n/a] @ "276210000"
+// RTL Simulation : 190 / 257 [n/a] @ "278370000"
+// RTL Simulation : 191 / 257 [n/a] @ "280518000"
+// RTL Simulation : 192 / 257 [n/a] @ "282654000"
+// RTL Simulation : 193 / 257 [n/a] @ "284778000"
+// RTL Simulation : 194 / 257 [n/a] @ "286834000"
+// RTL Simulation : 195 / 257 [n/a] @ "288878000"
+// RTL Simulation : 196 / 257 [n/a] @ "290910000"
+// RTL Simulation : 197 / 257 [n/a] @ "292930000"
+// RTL Simulation : 198 / 257 [n/a] @ "294938000"
+// RTL Simulation : 199 / 257 [n/a] @ "296934000"
+// RTL Simulation : 200 / 257 [n/a] @ "298918000"
+// RTL Simulation : 201 / 257 [n/a] @ "300870000"
+// RTL Simulation : 202 / 257 [n/a] @ "302810000"
+// RTL Simulation : 203 / 257 [n/a] @ "304738000"
+// RTL Simulation : 204 / 257 [n/a] @ "306654000"
+// RTL Simulation : 205 / 257 [n/a] @ "308558000"
+// RTL Simulation : 206 / 257 [n/a] @ "310450000"
+// RTL Simulation : 207 / 257 [n/a] @ "312330000"
+// RTL Simulation : 208 / 257 [n/a] @ "314178000"
+// RTL Simulation : 209 / 257 [n/a] @ "316014000"
+// RTL Simulation : 210 / 257 [n/a] @ "317802000"
+// RTL Simulation : 211 / 257 [n/a] @ "319578000"
+// RTL Simulation : 212 / 257 [n/a] @ "321342000"
+// RTL Simulation : 213 / 257 [n/a] @ "323094000"
+// RTL Simulation : 214 / 257 [n/a] @ "324834000"
+// RTL Simulation : 215 / 257 [n/a] @ "326542000"
+// RTL Simulation : 216 / 257 [n/a] @ "328238000"
+// RTL Simulation : 217 / 257 [n/a] @ "329922000"
+// RTL Simulation : 218 / 257 [n/a] @ "331594000"
+// RTL Simulation : 219 / 257 [n/a] @ "333254000"
+// RTL Simulation : 220 / 257 [n/a] @ "334902000"
+// RTL Simulation : 221 / 257 [n/a] @ "336538000"
+// RTL Simulation : 222 / 257 [n/a] @ "338142000"
+// RTL Simulation : 223 / 257 [n/a] @ "339734000"
+// RTL Simulation : 224 / 257 [n/a] @ "341314000"
+// RTL Simulation : 225 / 257 [n/a] @ "342882000"
+// RTL Simulation : 226 / 257 [n/a] @ "344402000"
+// RTL Simulation : 227 / 257 [n/a] @ "345910000"
+// RTL Simulation : 228 / 257 [n/a] @ "347406000"
+// RTL Simulation : 229 / 257 [n/a] @ "348870000"
+// RTL Simulation : 230 / 257 [n/a] @ "350322000"
+// RTL Simulation : 231 / 257 [n/a] @ "351762000"
+// RTL Simulation : 232 / 257 [n/a] @ "353190000"
+// RTL Simulation : 233 / 257 [n/a] @ "354606000"
+// RTL Simulation : 234 / 257 [n/a] @ "356010000"
+// RTL Simulation : 235 / 257 [n/a] @ "357402000"
+// RTL Simulation : 236 / 257 [n/a] @ "358762000"
+// RTL Simulation : 237 / 257 [n/a] @ "360110000"
+// RTL Simulation : 238 / 257 [n/a] @ "361446000"
+// RTL Simulation : 239 / 257 [n/a] @ "362770000"
+// RTL Simulation : 240 / 257 [n/a] @ "364082000"
+// RTL Simulation : 241 / 257 [n/a] @ "365382000"
+// RTL Simulation : 242 / 257 [n/a] @ "366634000"
+// RTL Simulation : 243 / 257 [n/a] @ "367854000"
+// RTL Simulation : 244 / 257 [n/a] @ "369062000"
+// RTL Simulation : 245 / 257 [n/a] @ "370258000"
+// RTL Simulation : 246 / 257 [n/a] @ "371442000"
+// RTL Simulation : 247 / 257 [n/a] @ "372614000"
+// RTL Simulation : 248 / 257 [n/a] @ "373774000"
+// RTL Simulation : 249 / 257 [n/a] @ "374922000"
+// RTL Simulation : 250 / 257 [n/a] @ "376038000"
+// RTL Simulation : 251 / 257 [n/a] @ "377142000"
+// RTL Simulation : 252 / 257 [n/a] @ "378234000"
+// RTL Simulation : 253 / 257 [n/a] @ "379314000"
+// RTL Simulation : 254 / 257 [n/a] @ "380382000"
+// RTL Simulation : 255 / 257 [n/a] @ "381438000"
+// RTL Simulation : 256 / 257 [n/a] @ "382482000"
+// RTL Simulation : 257 / 257 [n/a] @ "382530000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 382554 ns : File "/home/yunkunliao/scadet_fpga/vivado/hls_prj_opt_3/solution1/sim/verilog/scadet_v4.autotb.v" Line 574
+run: Time (s): cpu = 00:12:36 ; elapsed = 00:12:35 . Memory (MB): peak = 3587.418 ; gain = 0.000 ; free physical = 26779 ; free virtual = 58841
+## quit
+INFO: xsimkernel Simulation Memory Usage: 146460 KB (Peak: 184220 KB), Simulation CPU Usage: 187650 ms
+INFO: [Common 17-206] Exiting xsim at Fri Dec 15 04:00:28 2023...
+INFO: [COSIM 212-316] Starting C post checking ...
+VictimAddr = 7f62aa625577
+secId - 549
+write a new tsk 0
+write a new tsk 1
+write a new tsk 2
+write a new tsk 3
+write a new tsk 4
+write a new tsk 5
+write a new tsk 6
+write a new tsk 7
+write a new tsk 8
+write a new tsk 9
+write a new tsk 10
+write a new tsk 11
+write a new tsk 12
+write a new tsk 13
+write a new tsk 14
+write a new tsk 15
+write a new tsk 16
+write a new tsk 17
+write a new tsk 18
+write a new tsk 19
+write a new tsk 20
+write a new tsk 21
+write a new tsk 22
+write a new tsk 23
+write a new tsk 24
+write a new tsk 25
+write a new tsk 26
+write a new tsk 27
+write a new tsk 28
+write a new tsk 29
+write a new tsk 30
+write a new tsk 31
+write a new tsk 32
+write a new tsk 33
+write a new tsk 34
+write a new tsk 35
+write a new tsk 36
+write a new tsk 37
+write a new tsk 38
+write a new tsk 39
+write a new tsk 40
+write a new tsk 41
+write a new tsk 42
+write a new tsk 43
+write a new tsk 44
+write a new tsk 45
+write a new tsk 46
+write a new tsk 47
+write a new tsk 48
+write a new tsk 49
+write a new tsk 50
+write a new tsk 51
+write a new tsk 52
+write a new tsk 53
+write a new tsk 54
+write a new tsk 55
+write a new tsk 56
+write a new tsk 57
+write a new tsk 58
+write a new tsk 59
+write a new tsk 60
+write a new tsk 61
+write a new tsk 62
+write a new tsk 63
+write a new tsk 64
+write a new tsk 65
+write a new tsk 66
+write a new tsk 67
+write a new tsk 68
+write a new tsk 69
+write a new tsk 70
+write a new tsk 71
+write a new tsk 72
+write a new tsk 73
+write a new tsk 74
+write a new tsk 75
+write a new tsk 76
+write a new tsk 77
+write a new tsk 78
+write a new tsk 79
+write a new tsk 80
+write a new tsk 81
+write a new tsk 82
+write a new tsk 83
+write a new tsk 84
+write a new tsk 85
+write a new tsk 86
+write a new tsk 87
+write a new tsk 88
+write a new tsk 89
+write a new tsk 90
+write a new tsk 91
+write a new tsk 92
+write a new tsk 93
+write a new tsk 94
+write a new tsk 95
+write a new tsk 96
+write a new tsk 97
+write a new tsk 98
+write a new tsk 99
+write a new tsk 100
+write a new tsk 101
+write a new tsk 102
+write a new tsk 103
+write a new tsk 104
+write a new tsk 105
+write a new tsk 106
+write a new tsk 107
+write a new tsk 108
+write a new tsk 109
+write a new tsk 110
+write a new tsk 111
+write a new tsk 112
+write a new tsk 113
+write a new tsk 114
+write a new tsk 115
+write a new tsk 116
+write a new tsk 117
+write a new tsk 118
+write a new tsk 119
+write a new tsk 120
+write a new tsk 121
+write a new tsk 122
+write a new tsk 123
+write a new tsk 124
+write a new tsk 125
+write a new tsk 126
+write a new tsk 127
+write a new tsk 128
+write a new tsk 129
+write a new tsk 130
+write a new tsk 131
+write a new tsk 132
+write a new tsk 133
+write a new tsk 134
+write a new tsk 135
+write a new tsk 136
+write a new tsk 137
+write a new tsk 138
+write a new tsk 139
+write a new tsk 140
+write a new tsk 141
+write a new tsk 142
+write a new tsk 143
+write a new tsk 144
+write a new tsk 145
+write a new tsk 146
+write a new tsk 147
+write a new tsk 148
+write a new tsk 149
+write a new tsk 150
+write a new tsk 151
+write a new tsk 152
+write a new tsk 153
+write a new tsk 154
+write a new tsk 155
+write a new tsk 156
+write a new tsk 157
+write a new tsk 158
+write a new tsk 159
+write a new tsk 160
+write a new tsk 161
+write a new tsk 162
+write a new tsk 163
+write a new tsk 164
+write a new tsk 165
+write a new tsk 166
+write a new tsk 167
+write a new tsk 168
+write a new tsk 169
+write a new tsk 170
+write a new tsk 171
+write a new tsk 172
+write a new tsk 173
+write a new tsk 174
+write a new tsk 175
+write a new tsk 176
+write a new tsk 177
+write a new tsk 178
+write a new tsk 179
+write a new tsk 180
+write a new tsk 181
+write a new tsk 182
+write a new tsk 183
+write a new tsk 184
+write a new tsk 185
+write a new tsk 186
+write a new tsk 187
+write a new tsk 188
+write a new tsk 189
+write a new tsk 190
+write a new tsk 191
+write a new tsk 192
+write a new tsk 193
+write a new tsk 194
+write a new tsk 195
+write a new tsk 196
+write a new tsk 197
+write a new tsk 198
+write a new tsk 199
+write a new tsk 200
+write a new tsk 201
+write a new tsk 202
+write a new tsk 203
+write a new tsk 204
+write a new tsk 205
+write a new tsk 206
+write a new tsk 207
+write a new tsk 208
+write a new tsk 209
+write a new tsk 210
+write a new tsk 211
+write a new tsk 212
+write a new tsk 213
+write a new tsk 214
+write a new tsk 215
+write a new tsk 216
+write a new tsk 217
+write a new tsk 218
+write a new tsk 219
+write a new tsk 220
+write a new tsk 221
+write a new tsk 222
+write a new tsk 223
+write a new tsk 224
+write a new tsk 225
+write a new tsk 226
+write a new tsk 227
+write a new tsk 228
+write a new tsk 229
+write a new tsk 230
+write a new tsk 231
+write a new tsk 232
+write a new tsk 233
+write a new tsk 234
+write a new tsk 235
+write a new tsk 236
+write a new tsk 237
+write a new tsk 238
+write a new tsk 239
+write a new tsk 240
+write a new tsk 241
+write a new tsk 242
+write a new tsk 243
+write a new tsk 244
+write a new tsk 245
+write a new tsk 246
+write a new tsk 247
+write a new tsk 248
+write a new tsk 249
+write a new tsk 250
+write a new tsk 251
+write a new tsk 252
+write a new tsk 253
+write a new tsk 254
+write a new tsk 255
+write a new tsk 256
+20 is attacker!
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 970.32 seconds. CPU system time: 2.99 seconds. Elapsed time: 776.84 seconds; current allocated memory: 10.461 MB.
+INFO: [HLS 200-112] Total CPU user time: 990.12 seconds. Total CPU system time: 4.31 seconds. Total elapsed time: 796.25 seconds; peak allocated memory: 695.797 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Dec 15 04:00:30 2023...

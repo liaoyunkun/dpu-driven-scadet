@@ -1,0 +1,20 @@
+# OPT_TYPE TRACE_TYPE MIN_LAT AVG_LAT MAX_LAT
+# V1: Base Implementation
+# V2: V1 + Flow Cache
+# V3: V2 + Parallel Tag Search
+# V4: V3 + Parallel Minimum Element Finding
+# T0: EVICT+RELOAD 
+# T1: EVICT+RELOAD, TAG-LIST Eviction Heavy 
+# T2: YCSB Zipf 
+V1 0 32 252 377
+V1 1 37 511 945
+V1 2 40 118 169
+V2 0 11 133 246
+V2 1 11 371 792
+V2 2 14 32 54
+V3 0 10 45 65
+V3 1 10 105 274
+V3 2 13 20 33
+V4 0 10 47 67
+V4 1 10 71 134
+V4 2 13 21 25
