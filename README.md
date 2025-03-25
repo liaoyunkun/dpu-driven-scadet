@@ -1,5 +1,1 @@
-version description:
-v1: baseline implementation
-
-BUGs:
-TAG Hit Should be (tag hit) && (dqpn hit) 
+FPGA code for the paper "Efficient RNIC Cache Side-channel Attack Detection through DPU-driven Architecture" published in Euro-Par 2024.
